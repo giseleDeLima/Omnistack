@@ -1,0 +1,34 @@
+
+/*Estiliza o icone de imagem - tamanho */
+#icone{
+    width: 20%;
+    height: 20%;
+}
+
+/*Icone imagem */
+label#thumbnail{
+    margin-bottom: 20px;
+    border: 1px dashed #ddd;
+    background-size: cover;
+    cursor: pointer;
+    height: 160px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Icone imagem */
+label#thumbnail input{
+    display: none;
+}
+
+/*Se existir esta classe, retire a borda */
+label#thumbnail.has-thumbnail{
+    border: 0;
+}
+
+/* Se existir uma imagem selecionada pelo cliente, retire o icone de camera */
+label#thumbnail.has-thumbnail img{
+    display: none;
+}

@@ -1,0 +1,66 @@
+ul.spot-list{
+    width: 100%;
+    list-style: none; /* Tirar as bolinhas das listas */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 02 colunas dois espaços iguais que são colunas */
+    grid-gap: 20px; /* Espaçamento entre as colunas de 20px */
+    margin-bottom: 30px;
+}
+
+ul.spot-list li{
+    display: flex;
+    flex-direction: column; /* Quero um abaixo da outra como uma coluna */
+}
+
+ul.spot-list li header{
+    width: 100%;
+    height: 120px;
+    background-size: cover; /* Para que minha imagem cubra todo esse espaço width e height */
+    border-radius: 4px;
+}
+
+/* Titulo */
+ul.spot-list li strong{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #444;    
+}
+
+
+/* Preço do Spot */
+ul.spot-list li span{
+    font-size: 15px;
+    color: #999;   
+}
+
+/* Notificações: */
+
+ul.notifications{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+/* Cada uma das notificações */
+ul.notifications li{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Botão Aceitar ou Rejeitar que esta dentro de uma li */
+ul.notifications li button{
+    margin-right: 10px;
+    border: 0;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/*Botão accept */
+ul.notifications li button.accept{
+    color: #84C870;
+}
+
+/*Botão reject */
+ul.notifications li button.reject{
+    color: #E55E5E;
+}
